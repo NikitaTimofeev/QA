@@ -1,5 +1,5 @@
 package com.company;
-        import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main {
 
@@ -26,57 +26,90 @@ public class Main {
         System.out.println("\n");
 
         switch(choice) {
+
             case '1':
-                System.out.println("*");
-                System.out.println("* *");
-                System.out.println("* * *");
-                System.out.println("* * * *");
-                System.out.println("* * * * *");
-                System.out.println("* * * *");
-                System.out.println("* * *");
-                System.out.println("* *");
-                System.out.println("*");
+
+                for(int count =0;count <10;count++){
+                    int t=0;
+                    while (t<11){
+                        if (t ==count) break;
+                        System.out.print(" * ");
+                        t++;
+                    }
+                    System.out.println();
+                }
+                int count;
+                for(count = 0; 10 > count; count++){
+                int t=10;
+                while (t>0){
+                    if (count == t) break;
+                    System.out.print(" * ");
+                    t--;
+                }
+                System.out.println();
+            }
                 break;
+
+
             case '2':
-                System.out.println("*");
-                System.out.println("* *");
-                System.out.println("* * *");
-                System.out.println("* * * *");
-                System.out.println("* * * * *");
+                for(int i =0;i <10;i++){
+                    for (int j = 0; j < i; j++){
+                        System.out.print(" ");
+                    }
+                    for (int j = 0; j < 10-i; j++){
+                        System.out.print("*");
+                    }
+                    System.out.println( );
+                }
                 break;
             case '3':
-                System.out.println("        *");
-                System.out.println("      * *");
-                System.out.println("    * * *");
-                System.out.println("  * * * *");
-                System.out.println("* * * * *");
+                for(int i =0;i <10;i++){
+                for (int j = 0; j < 10-i; j++){
+                    System.out.print(" ");
+                }
+                for (int j = 0; j < i; j++){
+                    System.out.print("*");
+                }
+                System.out.println( );
+            }
                 break;
+
             case '4':
-                System.out.println("        *");
-                System.out.println("      * *");
-                System.out.println("    * * *");
-                System.out.println("  * * * *");
-                System.out.println("* * * * *");
-                System.out.println("  * * * *");
-                System.out.println("    * * *");
-                System.out.println("      * *");
-                System.out.println("        *");
+                for(int i =0;i <10;i++){
+                    for (int j = 0; j < 10-i; j++){
+                        System.out.print(" ");
+                    }
+                    for (int j = 0; j < i; j++){
+                        System.out.print("*");
+                    }
+                    System.out.println( );
+                }
+                for(int i =0;i <10;i++){
+                    for (int j = 0; j < i; j++){
+                        System.out.print(" ");
+                    }
+                    for (int j = 0; j < 10-i; j++){
+                        System.out.print("*");
+                    }
+                    System.out.println( );
+                }
                 break;
             case '5':
-                System.out.println("         *");
-                System.out.println("        ***");
-                System.out.println("      * * * *");
-                System.out.println("    * * * * * *");
-                System.out.println("  * * * * * * * *");
-                System.out.println("* * * * * * * * * *");
-                System.out.println("         *");
-                System.out.println("        ***");
-                System.out.println("      * * * *");
-                System.out.println("    * * * * * *");
-                System.out.println("  * * * * * * * *");
-                System.out.println("* * * * * * * * * *");
-
-
+                for (int i=0; i<2;++i){
+                    for (int j=0;j<=4;++j){
+                        for (int z=0; z<= 4-j;++z){
+                            System.out.print(' ');
+                        }
+                        for(int z=0; z<=2*j; ++z){
+                            System.out.print('*');
+                        }
+                        if(j==4){
+                            System.out.print(' ');
+                        }
+                        System.out.println();
+                    }
+                }
+                System.out.println();
                 break;
         }
     }

@@ -14,7 +14,7 @@ public class Task {
         
         int[] arrayInt = createArrayInt(number);
 
-        System.out.println("We had array " + Arrays.toString(arrayInt) + " but after some converter method we already have that thing" + Arrays.toString(converter(arrayInt)));
+        System.out.println("We had array " + Arrays.toString(arrayInt) + " but after some converter method we already have that thing" + Arrays.toString(converterOfArrays(arrayInt)));
     }
 
 
@@ -34,7 +34,7 @@ public class Task {
 
     
 //    Method for convertion array
-    static int[] converter (int[] array){
+    static int[] converterOfArrays (int[] array){
         int[] arrayneeded = Arrays.copyOf(array,array.length);
 
         int temp = 0;
@@ -46,3 +46,4 @@ public class Task {
 
         return arrayneeded;
     }
+}

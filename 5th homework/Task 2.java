@@ -15,7 +15,7 @@ public class Task {
         
         System.out.println("We have array " + Arrays.toString(arrayInt));
 
-        System.out.println("Summ of odd numbers -> " + count(arrayInt)[0] + " count -> "  + count(arrayInt)[1]);
+        System.out.println("Summ of odd numbers -> " + countAndSummOfOddElementsOfArray(arrayInt)[0] + " count -> "  + countAndSummOfOddElementsOfArray(arrayInt)[1]);
 
     }
 
@@ -35,7 +35,7 @@ public class Task {
     }
 
     
-    static int[] count (int[] array){
+    static int[] countAndSummOfOddElementsOfArray (int[] array){
         int summ = 0;
         int count =0;
         for(int i =0; i<array.length;i++){
